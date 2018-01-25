@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../css/exo5.css">
+    <script src="../js/jquery-2.2.4.js"></script>
+</head>
+
+<body>
+    <div id="carre"></div>
+
+    <script>
+        $(document).keydown(function(e) {
+            switch (e.which) {
+                case 37: //left arrow key
+                    $("#carre").css('left', $("#carre").offset().left - 10);
+                    break;
+                case 38: //up arrow key
+                    $("#carre").css('top', $("#carre").offset().top - 10);
+                    break;
+                case 39: //right arrow key
+                    $("#carre").css('left', $("#carre").offset().left + 10);
+                    break;
+                case 40: //bottom arrow key
+                    $("#carre").css('top', $("#carre").offset().top + 10);
+                    break;
+            }
+        });
+    </script>
+
+
+</body>
+
+</html

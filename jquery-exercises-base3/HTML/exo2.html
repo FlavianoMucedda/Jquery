@@ -17,13 +17,15 @@
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script>
-        let clicker = Number("");
+        let clicker = 0;
 
         $('#add').click(function() {
-            $('#count').text(clicker++);
+            clicker++;
+            $('#count').text(clicker);
         });
         $('#less').click(function() {
-            $('#count').text(clicker--);
+            clicker--;
+            $('#count').text(clicker);
         })
     </script>
 
